@@ -1,0 +1,326 @@
+{
+  "id": "theme-kino-tv-liquid-glass",
+  "name": "Kino TV · Liquid Glass",
+  "version": "1.0.0",
+  "apiVersion": 18,
+  "entry": "plugin.js",
+  "description": "Kino TV con el acabado de cristal líquido: superficies translúcidas, bordes de luz, esquinas continuas y un aurora azul de fondo en el celular y en el TV.",
+  "hosts": [],
+  "categories": [
+    "themes"
+  ],
+  "appThemes": [
+    {
+      "id": "liquid-glass",
+      "name": {
+        "es": "Kino TV · Liquid Glass",
+        "en": "Kino TV · Liquid Glass"
+      },
+      "experience": "full",
+      "pluginColors": "override",
+      "colors": {
+        "accent": "#6FAEFF",
+        "onAccent": "#04121F",
+        "background": "#060A17",
+        "surface": "#131A31",
+        "surfaceHigh": "#1C2442",
+        "railPanel": "#0A1024",
+        "textPrimary": "#F4F8FF",
+        "textSecondary": "#AEC0E0",
+        "focus": "#D7E7FF",
+        "onFocus": "#06101F",
+        "outline": "#2A3557",
+        "border": "#7D93C4",
+        "placeholderTop": "#1A2340",
+        "placeholderBottom": "#080D1D",
+        "success": "#45D98B",
+        "warning": "#FFC24B",
+        "error": "#FF6B6B",
+        "favorite": "#FF7EB0",
+        "scrim": "#04060E"
+      },
+      "background": {
+        "type": "gradient",
+        "colors": [
+          "#05080F",
+          "#0B1430",
+          "#141B4A",
+          "#0A1030",
+          "#05080F"
+        ],
+        "angle": 165
+      },
+      "shape": {
+        "cardRadius": 24,
+        "channelRadius": 24,
+        "buttonRadius": 26,
+        "chipRadius": 20,
+        "dialogRadius": 30,
+        "inputRadius": 18,
+        "cardBorder": 1,
+        "panelBorder": 1,
+        "dialogBorder": 1,
+        "menuBorder": 1,
+        "headerBorder": 1
+      },
+      "typography": {
+        "scale": 1.0,
+        "titleScale": 1.05,
+        "bodyScale": 1.0
+      },
+      "elevation": {
+        "cardShadow": 0.45,
+        "dialogShadow": 0.82,
+        "heroScrim": 0.85
+      },
+      "motion": {
+        "focusZoom": 1.07,
+        "crossfadeMs": 280,
+        "heroDrift": "on"
+      },
+      "player": {
+        "buttonScale": 1.05,
+        "playButtonScale": 1.16,
+        "seekBarScale": 1.1,
+        "labelScale": 1.0,
+        "buttonShape": "circle"
+      },
+      "tv": {
+        "shape": {
+          "cardRadius": 20,
+          "channelRadius": 20,
+          "dialogRadius": 24
+        },
+        "motion": {
+          "focusZoom": 1.06
+        }
+      },
+      "adjustable": {
+        "colors.accent": {
+          "swatches": [
+            "#6FAEFF",
+            "#A78BFA",
+            "#5FE0D0",
+            "#FF9AC1"
+          ]
+        },
+        "colors.border": {
+          "swatches": [
+            "#7D93C4",
+            "#FFFFFF",
+            "#A78BFA"
+          ]
+        },
+        "shape.cardRadius": {
+          "min": 8,
+          "max": 32
+        },
+        "typography.scale": {
+          "min": 1.0,
+          "max": 1.2
+        },
+        "background": true
+      },
+      "logo": {
+        "wordmark": {
+          "size": [
+            111,
+            30
+          ],
+          "paths": [
+            {
+              "d": "M9 0H21C25.97 0 30 4.03 30 9V21C30 25.97 25.97 30 21 30H9C4.03 30 0 25.97 0 21V9C0 4.03 4.03 0 9 0Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M9 1H21C25.5 1 28.9 4.4 29 8.9C27.1 7.9 24.9 7.4 22 7.4H9C6 7.4 3.7 8.1 1 9.6V9C1 4.6 4.6 1 9 1Z",
+              "fill": "#FFFFFF"
+            },
+            {
+              "d": "M12.1 10.2 21.3 15 12.1 19.8Z",
+              "fill": "onAccent"
+            },
+            {
+              "d": "M36.3 22.2 39.4 7.8H43.3L41.9 13.9L43.4 11.9L46.5 7.8H51.1L45.6 14.4L48.3 22.2H44L42.2 16.5L41.3 17.1L40.2 22.2Z M49.8 22.2 52.2 11H56L53.6 22.2ZM54.5 9.9Q53.7 9.9 53.2 9.6Q52.7 9.3 52.7 8.5Q52.7 7.9 52.9 7.4Q53.2 7 53.7 6.7Q54.2 6.5 54.9 6.5Q55.7 6.5 56.2 6.8Q56.8 7.1 56.8 7.9Q56.8 8.8 56.2 9.4Q55.7 9.9 54.5 9.9Z M56.4 22.2 58.8 11H61.9L61.7 12.6H61.8Q62.2 12 62.6 11.6Q63.1 11.2 63.6 11Q64.2 10.8 64.9 10.8Q66 10.8 66.6 11.3Q67.3 11.7 67.6 12.4Q67.9 13.1 67.9 14Q67.9 14.6 67.8 15.2Q67.7 15.8 67.6 16.3L66.4 22.2H62.5L63.8 16.1Q63.9 15.9 63.9 15.5Q64 15.1 64 14.7Q64 14.3 63.8 14.1Q63.5 13.9 63.2 13.9Q62.9 13.9 62.5 14.2Q62.2 14.5 61.9 15.1Q61.6 15.8 61.4 16.8L60.2 22.2Z M74 22.5Q72.6 22.5 71.6 21.9Q70.7 21.4 70.2 20.5Q69.7 19.5 69.7 18.1Q69.7 17 69.9 15.9Q70.2 14.8 70.7 13.9Q71.2 13 72 12.3Q72.7 11.6 73.7 11.2Q74.7 10.8 76 10.8Q77.4 10.8 78.3 11.3Q79.3 11.8 79.8 12.8Q80.3 13.8 80.3 15.1Q80.3 16.3 80 17.4Q79.8 18.5 79.3 19.4Q78.8 20.3 78 21Q77.2 21.7 76.2 22.1Q75.2 22.5 74 22.5ZM74.4 19.6Q74.7 19.6 75.1 19.3Q75.4 19.1 75.6 18.6Q75.8 18.2 76 17.6Q76.2 17 76.3 16.3Q76.4 15.7 76.4 15Q76.4 14.6 76.3 14.3Q76.2 14 76 13.9Q75.8 13.7 75.5 13.7Q75.2 13.7 74.9 14Q74.6 14.2 74.4 14.7Q74.1 15.1 73.9 15.7Q73.8 16.3 73.7 16.9Q73.6 17.6 73.6 18.2Q73.6 18.9 73.8 19.2Q74 19.6 74.4 19.6Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M85 22.2 87.3 11H84.2L84.9 7.8H95.1L94.4 11H91.2L88.9 22.2Z M96.4 22.2 95.3 7.8H99.1L99.4 15.1Q99.4 15.6 99.4 16.3Q99.4 17 99.3 17.7Q99.3 18.3 99.2 18.7H99.3Q99.5 17.9 99.8 17.1Q100.1 16.2 100.3 15.7L103.8 7.8H107.9L100.7 22.2Z",
+              "fill": "accent"
+            }
+          ]
+        },
+        "mark": {
+          "size": [
+            30,
+            30
+          ],
+          "paths": [
+            {
+              "d": "M9 0H21C25.97 0 30 4.03 30 9V21C30 25.97 25.97 30 21 30H9C4.03 30 0 25.97 0 21V9C0 4.03 4.03 0 9 0Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M9 1H21C25.5 1 28.9 4.4 29 8.9C27.1 7.9 24.9 7.4 22 7.4H9C6 7.4 3.7 8.1 1 9.6V9C1 4.6 4.6 1 9 1Z",
+              "fill": "#FFFFFF"
+            },
+            {
+              "d": "M12.1 10.2 21.3 15 12.1 19.8Z",
+              "fill": "onAccent"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "liquid-glass-claro",
+      "name": {
+        "es": "Kino TV · Liquid Glass Claro",
+        "en": "Kino TV · Liquid Glass Light"
+      },
+      "experience": "full",
+      "pluginColors": "override",
+      "colors": {
+        "accent": "#0A63E6",
+        "onAccent": "#FFFFFF",
+        "background": "#EDF2FA",
+        "surface": "#F8FBFF",
+        "surfaceHigh": "#FFFFFF",
+        "railPanel": "#F2F6FD",
+        "textPrimary": "#0A1020",
+        "textSecondary": "#4A5878",
+        "focus": "#0A63E6",
+        "onFocus": "#FFFFFF",
+        "outline": "#C6D5EA",
+        "border": "#C9D9EF",
+        "placeholderTop": "#DDE7F7",
+        "placeholderBottom": "#F2F6FD",
+        "success": "#0B7A6B",
+        "warning": "#B26B00",
+        "error": "#C62828",
+        "favorite": "#D81B60",
+        "scrim": "#0B1220"
+      },
+      "background": {
+        "type": "gradient",
+        "colors": [
+          "#EDF2FA",
+          "#F6F1FF",
+          "#E9F7FF",
+          "#EDF2FA"
+        ],
+        "angle": 160
+      },
+      "shape": {
+        "cardRadius": 24,
+        "channelRadius": 24,
+        "buttonRadius": 26,
+        "chipRadius": 20,
+        "dialogRadius": 30,
+        "inputRadius": 18,
+        "cardBorder": 1,
+        "panelBorder": 1,
+        "dialogBorder": 1,
+        "menuBorder": 1,
+        "headerBorder": 1
+      },
+      "typography": {
+        "scale": 1.0,
+        "titleScale": 1.05,
+        "bodyScale": 1.0
+      },
+      "elevation": {
+        "cardShadow": 0.22,
+        "dialogShadow": 0.5,
+        "heroScrim": 0.6
+      },
+      "motion": {
+        "focusZoom": 1.07,
+        "crossfadeMs": 280,
+        "heroDrift": "on"
+      },
+      "player": {
+        "buttonScale": 1.05,
+        "playButtonScale": 1.16,
+        "seekBarScale": 1.1,
+        "labelScale": 1.0,
+        "buttonShape": "circle"
+      },
+      "adjustable": {
+        "colors.accent": {
+          "swatches": [
+            "#0A63E6",
+            "#6B4BF0",
+            "#0B7A6B"
+          ]
+        },
+        "colors.border": {
+          "swatches": [
+            "#C9D9EF",
+            "#8FB3E0",
+            "#6B4BF0"
+          ]
+        },
+        "shape.cardRadius": {
+          "min": 8,
+          "max": 32
+        },
+        "typography.scale": {
+          "min": 1.0,
+          "max": 1.2
+        },
+        "background": true
+      },
+      "logo": {
+        "wordmark": {
+          "size": [
+            111,
+            30
+          ],
+          "paths": [
+            {
+              "d": "M9 0H21C25.97 0 30 4.03 30 9V21C30 25.97 25.97 30 21 30H9C4.03 30 0 25.97 0 21V9C0 4.03 4.03 0 9 0Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M9 1H21C25.5 1 28.9 4.4 29 8.9C27.1 7.9 24.9 7.4 22 7.4H9C6 7.4 3.7 8.1 1 9.6V9C1 4.6 4.6 1 9 1Z",
+              "fill": "#FFFFFF"
+            },
+            {
+              "d": "M12.1 10.2 21.3 15 12.1 19.8Z",
+              "fill": "onAccent"
+            },
+            {
+              "d": "M36.3 22.2 39.4 7.8H43.3L41.9 13.9L43.4 11.9L46.5 7.8H51.1L45.6 14.4L48.3 22.2H44L42.2 16.5L41.3 17.1L40.2 22.2Z M49.8 22.2 52.2 11H56L53.6 22.2ZM54.5 9.9Q53.7 9.9 53.2 9.6Q52.7 9.3 52.7 8.5Q52.7 7.9 52.9 7.4Q53.2 7 53.7 6.7Q54.2 6.5 54.9 6.5Q55.7 6.5 56.2 6.8Q56.8 7.1 56.8 7.9Q56.8 8.8 56.2 9.4Q55.7 9.9 54.5 9.9Z M56.4 22.2 58.8 11H61.9L61.7 12.6H61.8Q62.2 12 62.6 11.6Q63.1 11.2 63.6 11Q64.2 10.8 64.9 10.8Q66 10.8 66.6 11.3Q67.3 11.7 67.6 12.4Q67.9 13.1 67.9 14Q67.9 14.6 67.8 15.2Q67.7 15.8 67.6 16.3L66.4 22.2H62.5L63.8 16.1Q63.9 15.9 63.9 15.5Q64 15.1 64 14.7Q64 14.3 63.8 14.1Q63.5 13.9 63.2 13.9Q62.9 13.9 62.5 14.2Q62.2 14.5 61.9 15.1Q61.6 15.8 61.4 16.8L60.2 22.2Z M74 22.5Q72.6 22.5 71.6 21.9Q70.7 21.4 70.2 20.5Q69.7 19.5 69.7 18.1Q69.7 17 69.9 15.9Q70.2 14.8 70.7 13.9Q71.2 13 72 12.3Q72.7 11.6 73.7 11.2Q74.7 10.8 76 10.8Q77.4 10.8 78.3 11.3Q79.3 11.8 79.8 12.8Q80.3 13.8 80.3 15.1Q80.3 16.3 80 17.4Q79.8 18.5 79.3 19.4Q78.8 20.3 78 21Q77.2 21.7 76.2 22.1Q75.2 22.5 74 22.5ZM74.4 19.6Q74.7 19.6 75.1 19.3Q75.4 19.1 75.6 18.6Q75.8 18.2 76 17.6Q76.2 17 76.3 16.3Q76.4 15.7 76.4 15Q76.4 14.6 76.3 14.3Q76.2 14 76 13.9Q75.8 13.7 75.5 13.7Q75.2 13.7 74.9 14Q74.6 14.2 74.4 14.7Q74.1 15.1 73.9 15.7Q73.8 16.3 73.7 16.9Q73.6 17.6 73.6 18.2Q73.6 18.9 73.8 19.2Q74 19.6 74.4 19.6Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M85 22.2 87.3 11H84.2L84.9 7.8H95.1L94.4 11H91.2L88.9 22.2Z M96.4 22.2 95.3 7.8H99.1L99.4 15.1Q99.4 15.6 99.4 16.3Q99.4 17 99.3 17.7Q99.3 18.3 99.2 18.7H99.3Q99.5 17.9 99.8 17.1Q100.1 16.2 100.3 15.7L103.8 7.8H107.9L100.7 22.2Z",
+              "fill": "accent"
+            }
+          ]
+        },
+        "mark": {
+          "size": [
+            30,
+            30
+          ],
+          "paths": [
+            {
+              "d": "M9 0H21C25.97 0 30 4.03 30 9V21C30 25.97 25.97 30 21 30H9C4.03 30 0 25.97 0 21V9C0 4.03 4.03 0 9 0Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M9 1H21C25.5 1 28.9 4.4 29 8.9C27.1 7.9 24.9 7.4 22 7.4H9C6 7.4 3.7 8.1 1 9.6V9C1 4.6 4.6 1 9 1Z",
+              "fill": "#FFFFFF"
+            },
+            {
+              "d": "M12.1 10.2 21.3 15 12.1 19.8Z",
+              "fill": "onAccent"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
